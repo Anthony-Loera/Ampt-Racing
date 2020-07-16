@@ -1,7 +1,6 @@
 import React from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import Header from "./header";
-import Slideshow from "./slideshow";
 import Contact from "./Contact";
 import Homepage from "./Homepage";
 import "./App.css";
@@ -17,10 +16,9 @@ const theme = createMuiTheme({
   },
 });
 
-function view() {
+export function view() {
   return (
     <div>
-      <Slideshow />
       <Contact />
     </div>
   );

@@ -3,9 +3,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 export default function Body() {
+  document.title = "Ampt Racing";
   return (
     <React.Fragment>
-      <div className="Motto">
+      <div className="MobileLogoContainer">
+        <div className="MobileLogoContainer">
+          <img className="MobileLogo" alt="" src="/images/Logo.jpg" />
+        </div>
         <h1 className="Motto">
           We are here for all your on and offroad racing needs call, text, or
           come see us at the shop.

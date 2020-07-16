@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Contact() {
+  document.title = "Ampt Racing | Conatct";
   return (
     <div className="Contact-Info">
       <h2>Phone- (909)936-8641</h2>
