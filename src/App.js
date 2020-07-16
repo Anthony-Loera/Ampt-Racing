@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core";
+import Header from "./header";
+import Slideshow from "./slideshow";
+import Contact from "./Contact";
+import Homepage from "./Homepage";
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+const theme = createMuiTheme({
+  overrides: {
+    MuiAppBar: {
+      colorPrimary: {
+        backgroundColor: "#8B4513",
+      },
+    },
+  },
+});
+
+function view() {
+  return (
+    <div>
+      <Slideshow />
+      <Contact />
+    </div>
+  );
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route component={Homepage} exact path="/" />
+          <Route component={Contact} exact path="/contact-us" />
+        </Switch>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
