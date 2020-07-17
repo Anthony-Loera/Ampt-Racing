@@ -56,10 +56,12 @@ Mobile View
   .MobileLogo {
     max-width: 300px;
     background-color: black;
+    padding-top: 12px;
   }
   .MobileLogoContainer {
     background-color: black;
     text-align: center;
+    padding-top: 12px;
   }
 }
 /***************************
@@ -132,6 +134,7 @@ Contact-Info
   margin: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   position: fixed;
+  padding: 0px 12px 0px 12px;
 }
 
 /***************************
