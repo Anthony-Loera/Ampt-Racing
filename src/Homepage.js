@@ -8,7 +8,11 @@ export default function Body() {
     <React.Fragment>
       <div className="MobileLogoContainer">
         <div className="MobileLogoContainer">
-          <img className="MobileLogo" alt="" src="/images/Logo.jpg" />
+          <img
+            className="MobileLogo"
+            alt="Ampt Racing"
+            src="/images/Logo.jpg"
+          />
         </div>
         <h1 className="Motto">
           We are here for all your on and offroad racing needs. Call, text, or
