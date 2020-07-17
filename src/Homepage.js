@@ -11,7 +11,7 @@ export default function Body() {
           <img className="MobileLogo" alt="" src="/images/Logo.jpg" />
         </div>
         <h1 className="Motto">
-          We are here for all your on and offroad racing needs call, text, or
+          We are here for all your on and offroad racing needs. Call, text, or
           come see us at the shop.
         </h1>
       </div>
